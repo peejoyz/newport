@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/p1.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- Swiperjs css -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/about.css">
+        <link rel="stylesheet" href="assets/css/interest.css">
+        <link rel="stylesheet" href="assets/css/contact.css">
+        <link rel="stylesheet" href="assets/css/testimonials.css">
+
+        <script src="script.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init('-EEEtAJ75Soux7afH');
+            })();
+        </script>
+
+        <title>AYODEJI</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <!-- Insert your image, according to the example size of the portfolio -->
+                            <img src="assets/img/yes.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <h2 class="profile__name">Ayodeji Ojo</h2>
+                    <h1 class="profile__ali">(JOYZ)</h1>
+                    <h3 class="profile__profession">Web developer</h3>
+
+                    <ul class="header__socials">
+                        <a href="https://www.twitter.com/peejoyz" target="_blank">
+                            <i class="ri-twitter-line social_show"> </i>
+                                <span class="social_text">
+                                    Twitter
+                                </span>
+                            
+                        </a>
+            
+                        <a href="https://github.com/peejoyz" target="_blank">
+                            <i class="ri-github-line social_show"></i>
+                            <span class="social_text">
+                                Github
+                            </span>
+                        </a>
+                    </ul>
+
+                    <a href='#contact' class='scroll__down'>Scroll Down</a>
+                </div>
+
+
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">4+</h3>
+                        <p class="profile__info-description">
+                            Years of <br> work
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">9+</h3>
+                        <p class="profile__info-description">
+                            Completed <br> projects
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">12+</h3>
+                        <p class="profile__info-description">Satisfied <br> customers</p>
+                    </div>
+                </div>
+
+                <div class="profile__buttons">
+                    <!-- Insert your CV -->
+                    <a href="assets/pdf/Ayodeji_resume.pdf" download class="button">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+
+                    <div class="profile__buttons-small">
+                        <a href="#contact" class="btn2 btn-primary2">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section id="about" class="about">
+                <h2>About me</h2>
+          
+                <div class="container about__container">
+                  <div class="about__me">
+                    <div class="about-image">
+                      <img src="assets/img/about.jpg" alt='About Image' />
+                    </div>
+                  </div>
+          
+                  <div class="about__contact">
+          
+                    <p class="about_words">
+                        A web developer capable of continuous learning from other developers. 
+                        Experience in driving projects forward as the development team leader, 
+                        facilitating projects. Passionate about learning and development with a 
+                        desire to apply skills on a development team. Enjoy working closely 
+                        with team members to ensure  workloads are effectively redirected to 
+                        bottlenecks and personally picking up the slack when necessary.
+                    </p>
+          
+                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                  </div>
+                </div>
+          
+              </section>
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Projects
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
+
+                <!--=============== PROJECTS ===============-->
+                <div class="filters__sections">
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="assets/img/port1.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">Online Medical and Appointment Design</h3>
+                                    <a href="https://glorymedicals.netlify.app" class="projects__button button_p button__small">
+                                        <i class="ri-link"></i>
+                                        DEMO
+                                    </a>
+                                    <a href="https://github.com/peejoyz/Booking-appointment" class="projects__button button_p button__small" target='_blank'>
+                                        <i class="ri-link"></i>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/portsun2.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">A Hotel website.</h3>
+                                    <a href="https://sunrisehabor.netlify.app/" class="projects__button button_p button__small">
+                                        <i class="ri-link"></i>
+                                        DEMO
+                                    </a>
+                                    <a href="'https://github.com/peejoyz/sunrise'" class="projects__button button_p button__small" target='_blank'>
+                                        <i class="ri-link"></i>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/port4.JPG" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h3 class="projects__title">My Portfolio Website</h3>
+                                    <a href="https://joyzdev.netlify.app/" class="projects__button button_p button__small">
+                                        <i class="ri-link"></i>
+                                        DEMO
+                                    </a>
+                                    <a href="https://github.com/peejoyz/newport" class="projects__button button_p button__small" target='_blank'>
+                                        <i class="ri-link"></i>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title"></h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">HTML</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">JavaScript</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title"></h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+
+                                    <!-- new -->
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Node Js</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Express Js</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Mongo DB</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- new -->
+        
+                                </div>
+                                
+                                <div class="skills__group">
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">PHP</h3>
+                                            <span class="skills__level">Beginner</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">MySQL</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id='interest'>
+                <h5>More About Me</h5>
+                <h2>Interest</h2>
+          
+                <div class="container interest__container">
+                  <article class="interest">
+                    <div class="interest__head">
+                      <h3>Teaching</h3>
+                    </div>
+          
+                    <p>
+                      Apart from being a tech enthusiast and a code writer, I also love to teach people what i know
+                      because i believe in sharing.
+                    </p>
+                  </article>
+          
+                  <article class="interest">
+                    <div class="interest__head">
+                      <h3>Music</h3>
+                    </div>
+          
+                    <p>
+                      Listening to refreshing and soothing music is something i can never get over, listening to different playlist
+                      created by various streaming platforms and listening to the ones 
+                      i created myself is the best stress reliever that i can get myhands on.
+                    </p>
+                  </article>
+          
+                  <article class="interest">
+                    <div class="interest__head">
+                      <h3>Gaming</h3>
+                    </div>
+          
+                    <p>
+                      Aside music, gaming is another activity i get 
+                      involve in, to relieve stress, to relax and test my reflexes.
+                    </p>
+                  </article>
+                </div>
+              </section>
+
+            <!-- TESTIMONIALS -->
+            
+            <section id="testimonials">
+                <h5>Review from Clients</h5>
+                <h2>Testimonials</h2>
+
+                <div class="swiper mySwiper container testimonials__container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonial"> 
+                            <div class="client__image">
+                                <img src="assets/img/test11.png" alt="">
+                            </div>
+                            <h5 class="client_name"><stron>Samson Kej</stron></h5>
+                            <small class="client__review">
+                                He is incredibly awesome, I hired him and when he delivered, I honestly fell 
+                                in love with the project. He is indeed a great guy.
+                            </small>
+                        </div>
+
+                        <div class="swiper-slide testimonial">
+                            <div class="client__image">
+                                <img src="assets/img/test22.jpg" alt="">
+                            </div>
+                            <h5 class="client_name"><strong>Francis Smith</strong></h5>
+                            <small class="client__review">
+                                I patronized Joyz and when He delivered, 
+                                I liked what i saw. He is very honest and he delivers ontime.
+                            </small>
+                        </div>
+
+                        <div class="swiper-slide testimonial">
+                            <div class="client__image">
+                                <img src="assets/img/test33.png" alt="">
+                            </div>
+                            <h5 class="client_name"><strong>Helen B</strong></h5>
+                            <small class="client__review">
+                                It was nice hiring this guy, he delivered even more than I imagined.
+                            </small>
+                        </div>
+
+                        <div class="swiper-slide testimonial">
+                            <div class="client__image">
+                                <img src="assets/img/test2.jpg" alt="">
+                            </div>
+                            <h5 class="client_name">Mikel</h5>
+                            <small class="client__review">
+                                He has a way of satisfying me with his work. He's a great guy.
+                            </small> 
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+            </section>
+
+
+            <section id='contact'>
+
+            <h5>Get In Touch</h5>
+        
+            <h2>Contact Me</h2>
+            <div class='container contact__container'>
+                <div class="contact__options">
+                <article class="contact__option">
+                    <a style="line-height: 1.5rem;" href="mailto:joyzdev73@gmail.com" target="_blank" class="contact__option-icon">
+                        <i class="ri-mail-line"></i>
+                        <h4 style="font-size: medium;">Email</h4>
+                        <h5 style="font-size: small;">joyzdev73@gmail.com</h5>
+                        <h5 style="font-size: smaller; color: antiquewhite;">Send a Message</h5>
+                    </a>
+                </article>
+        
+                <article class="contact__option">
+                    <a style="line-height: 1.5rem;" style="font-size: large;" href='https://wa.me/+2348163905061'target="_blank" class="contact__option-icon">
+                        <i class="ri-whatsapp-line"></i>
+                        <h4 style="font-size: medium;">WhatsApp</h4>
+                        <h5 style="font-size: small;">+234</h5>
+                        <h5 style="font-size: smaller; color: antiquewhite;">Send a Message</h5>
+                    </a>
+                </article>
+
+                </div>
+        
+                <form id="contact-form" autoComplete='off'>
+                    <input type="hidden" name="contact_number">
+                    <input type="text" name="name" placeholder="Your Name" required /> 
+                    <input type="text" name="email" placeholder="Your email" required />
+                    <textarea name="message" rows="7" placeholder="Your Message" required></textarea> 
+                    <input type="submit" value="Send Message" class="btn btn-primary">
+                </form>
+                
+            </div>
+        
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; Ayodeji. All rigths reserved.
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            spaceBetween: 20,
+            slidesParView:1,
+        });
+        </script>
+
+    </body>
+</html>
