@@ -1,495 +1,255 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/p1.png" type="image/x-icon">
+    <title>AYODEJI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="assets/img/logo2.png" alt="AYODEJI" srcset="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Porfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Backend Engineer</p>
+            <h1>Hi, I am <span>Ayodeji</span> </h1>
+        </div>
+       </div> 
+    </div>
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/p1.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        <!-- Swiperjs css -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/about.css">
-        <link rel="stylesheet" href="assets/css/interest.css">
-        <link rel="stylesheet" href="assets/css/contact.css">
-        <link rel="stylesheet" href="assets/css/testimonials.css">
-
-        <script src="script.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function() {
-                emailjs.init('-EEEtAJ75Soux7afH');
-            })();
-        </script>
-
-        <title>AYODEJI</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="profile container">
-            <!-- Theme button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-            <div class="profile__container grid">
-                <div class="profile__data">
-                    <div class="profile__border">
-                        <div class="profile__perfil">
-                            <!-- Insert your image, according to the example size of the portfolio -->
-                            <img src="assets/img/yes.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <h2 class="profile__name">Ayodeji Ojo</h2>
-                    <h1 class="profile__ali">(JOYZ)</h1>
-                    <h3 class="profile__profession">Backend developer</h3>
-
-                    <ul class="header__socials">
-                        <a href="https://www.twitter.com/iampeejoyz" target="_blank">
-                            <i class="ri-twitter-line social_show"> </i>
-                                <span class="social_text">
-                                    Twitter
-                                </span>
-                            
-                        </a>
-            
-                        <a href="https://github.com/peejoyz" target="_blank">
-                            <i class="ri-github-line social_show"></i>
-                            <span class="social_text">
-                                Github
-                            </span>
-                        </a>
-                    </ul>
-
-                    <a href='#contact' class='scroll__down'>Scroll Down</a>
+    <!-- ---------- About ------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/img/about-t.png" alt="" srcset="">
                 </div>
-
-
-                <div class="profile__info grid">
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">2+</h3>
-                        <p class="profile__info-description">
-                            Years of <br> work
-                        </p>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        A backend developer capable of continuous learning from other 
+                        developers, with a passion for building scalable and reliable web 
+                        applications.  Ability to architect, develop and deploy high-performance APIs. Highly motivated about learning and development 
+                        with a desire to apply skills on a development team. Thrives on 
+                        problem-solving and collaboration, turning ambitious ideas into 
+                        reality. Seeking a challenging position where I can use my skills to
+                        make a significant impact, also with a commitment to stay updated 
+                        with industry trends for continuous growth.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">9+</h3>
-                        <p class="profile__info-description">
-                            Completed <br> projects
-                        </p>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>Javascript</li>
+                            <li>Bootstrap</li>
+                            <li>NodeJS</li>
+                            <li>ExpressJS</li>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>Git</li>
+                            <li>EJS</li>   
+                        </ul>
                     </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">12+</h3>
-                        <p class="profile__info-description">Satisfied <br> customers</p>
-                    </div>
-                </div>
-
-                <div class="profile__buttons">
-                    <!-- Insert your CV -->
-                    <a href="assets/pdf/Deji--Resume.pdf" download class="button">
-                        Download CV <i class="ri-download-line"></i>
-                    </a>
-
-                    <div class="profile__buttons-small">
-                        <a href="#contact" class="btn2 btn-primary2">Let's Talk</a>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>B.Tech Computer Science, Lautech</li>
+                            <li><span>2023</span><br>NodeJS certification by I4GxZuri</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </div>
 
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section id="about" class="about">
-                <h2>About me</h2>
-          
-                <div class="container about__container">
-                  <div class="about__me">
-                    <div class="about-image">
-                      <img src="assets/img/about.jpg" alt='About Image' />
-                    </div>
-                  </div>
-          
-                  <div class="about__contact">
-          
-                    <p class="about_words">
-                        A Backend developer capable of continuous learning from other developers. 
-                        Experience in driving projects forward as the development team leader, 
-                        facilitating projects. Passionate about learning and development with a 
-                        desire to apply skills on a development team. Enjoy working closely 
-                        with team members to ensure  workloads are effectively redirected to 
-                        bottlenecks and personally picking up the slack when necessary.
-                    </p>
-          
-                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
-                  </div>
-                </div>
-          
-              </section>
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-                <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects">
-                        Projects
-                    </button>
-                    <button class="filters__button" data-target="#skills">
-                        Skills
-                    </button>
-                </ul>
-
-                <!--=============== PROJECTS ===============-->
-                <div class="filters__sections">
-                    <div class="projects__content grid filters__active" data-content id="projects">
-
-                        <article class="projects__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                            <img src="assets/img/port5-5.JPG" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">A Blog API with CRUD, with more functionalities.</h3>
-                                    <a href="https://blog-rest-api.cyclic.app/blogs" class="projects__button button_p button__small">
-                                        <i class="ri-link"></i>
-                                        DEMO
-                                    </a>
-                                    <a href="https://github.com/peejoyz/blog-api" class="projects__button button_p button__small" target='_blank'>
-                                        <i class="ri-link"></i>
-                                        Github
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="assets/img/flixxPort.JPG" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">A Video streaming website with blog integration.</h3>
-                                    <a href="https://flixx.cyclic.app/" class="projects__button button_p button__small">
-                                        <i class="ri-link"></i>
-                                        DEMO
-                                    </a>
-                                    <a href="https://github.com/peejoyz/flixx" class="projects__button button_p button__small" target='_blank'>
-                                        <i class="ri-link"></i>
-                                        Github
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="projects__card">
-                            <img src="assets/img/Joyz-store.JPG" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">A Shopping cart website.</h3>
-                                    <a href="https://joyz-store.cyclic.app/" class="projects__button button_p button__small">
-                                        <i class="ri-link"></i>
-                                        DEMO
-                                    </a>
-                                    <a href="https://github.com/peejoyz/joyz-store" class="projects__button button_p button__small" target='_blank'>
-                                        <i class="ri-link"></i>
-                                        Github
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-
-                    </div>
-
-                    <!--=============== SKILLS ===============-->
-                    <div class="skills__content grid" data-content id="skills">
-                        <div class="skills__area">
-                            <h3 class="skills__title"></h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">HTML</h3>
-                                            <span class="skills__level"></span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">CSS</h3>
-                                            <span class="skills__level"></span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">JavaScript</h3>
-                                            <span class="skills__level"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Bootstrap</h3>
-                                            <span class="skills__level"></span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">NodeJs</h3>
-                                            <span class="skills__level"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">ExpressJs</h3>
-                                            <span class="skills__level"></span>
-                                        </div>
-                                    </div>
-        
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skills__area">
-                            <h3 class="skills__title"></h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-
-                                    <!-- new -->
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">EJS</h3>
-                                            <span class="skills__level"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">MongoDB</h3>
-                                            <span class="skills__level"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">MySQL</h3>
-                                            <span class="skills__level"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Git</h3>
-                                            <span class="skills__level"></span>
-                                        </div>
-                                    </div>
-
-                                    <!-- new -->
-        
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id='interest'>
-                <h5>More About Me</h5>
-                <h2>Interest</h2>
-          
-                <div class="container interest__container">
-                  <article class="interest">
-                    <div class="interest__head">
-                      <h3>Teaching</h3>
-                    </div>
-          
+    <!-- --------------------services -------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">More About Me</h1>
+            <div class="services-list">
+                <div>
+                    <i></i>
+                    <h2>Teaching</h2>
                     <p>
-                      Apart from being a tech enthusiast and a code writer, I also love to teach people what i know
-                      because i believe in sharing.
+                        Apart from being a tech enthusiast and a code writer, I also love to teach people what i know
+                        because i believe in sharing.  
                     </p>
-                  </article>
-          
-                  <article class="interest">
-                    <div class="interest__head">
-                      <h3>Music</h3>
-                    </div>
-          
+                    
+                </div>
+
+                <div>
+                    <h2>Music</h2>
                     <p>
-                      Listening to refreshing and soothing music is something i can never get over, listening to different playlist
-                      created by various streaming platforms and listening to the ones 
-                      i created myself is the best stress reliever that i can get myhands on.
+                        Listening to refreshing and soothing music is something i can never get over, listening to different playlist
+                        created by various streaming platforms and listening to the ones 
+                        i created myself is the best stress reliever that i can get myhands on. 
                     </p>
-                  </article>
-          
-                  <article class="interest">
-                    <div class="interest__head">
-                      <h3>Gaming</h3>
-                    </div>
-          
+                    
+                </div>
+
+                <div>
+                    <h2>Gaming</h2>
                     <p>
-                      Aside music, gaming is another activity i get 
-                      involve in, to relieve stress, to relax and test my reflexes.
+                        Aside music, gaming is another activity i get 
+                        involve in, to relieve stress, to relax and test my reflexes. 
                     </p>
-                  </article>
+                    
                 </div>
-              </section>
-
-            <!-- TESTIMONIALS -->
-            
-            <section id="testimonials">
-                <h5>Review from Clients</h5>
-                <h2>Testimonials</h2>
-
-                <div class="swiper mySwiper container testimonials__container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide testimonial"> 
-                            <div class="client__image">
-                                <img src="assets/img/test11.png" alt="">
-                            </div>
-                            <h5 class="client_name"><stron>Samson Kej</stron></h5>
-                            <small class="client__review">
-                                He is incredibly awesome, I hired him and when he delivered, I honestly fell 
-                                in love with the project. He is indeed a great guy.
-                            </small>
-                        </div>
-
-                        <div class="swiper-slide testimonial">
-                            <div class="client__image">
-                                <img src="assets/img/test22.jpg" alt="">
-                            </div>
-                            <h5 class="client_name"><strong>Francis Smith</strong></h5>
-                            <small class="client__review">
-                                I patronized Joyz and when He delivered, 
-                                I liked what i saw. He is very honest and he delivers ontime.
-                            </small>
-                        </div>
-
-                        <div class="swiper-slide testimonial">
-                            <div class="client__image">
-                                <img src="assets/img/test33.png" alt="">
-                            </div>
-                            <h5 class="client_name"><strong>Helen B</strong></h5>
-                            <small class="client__review">
-                                It was nice hiring this guy, he delivered even more than I imagined.
-                            </small>
-                        </div>
-
-                        <div class="swiper-slide testimonial">
-                            <div class="client__image">
-                                <img src="assets/img/test2.jpg" alt="">
-                            </div>
-                            <h5 class="client_name">Mikel</h5>
-                            <small class="client__review">
-                                He has a way of satisfying me with his work. He's a great guy.
-                            </small> 
-                        </div>
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-                
-            </section>
-
-
-            <section id='contact'>
-
-            <h5>Get In Touch</h5>
-        
-            <h2>Contact Me</h2>
-            <div class='container contact__container'>
-                <div class="contact__options">
-                <article class="contact__option">
-                    <a style="line-height: 1.5rem;" href="mailto:joyzdev73@gmail.com" target="_blank" class="contact__option-icon">
-                        <i class="ri-mail-line"></i>
-                        <h4 style="font-size: medium;">Email</h4>
-                        <h5 style="font-size: small;">ayodejipee73@gmail.com</h5>
-                        <h5 style="font-size: smaller; color: antiquewhite;">Send a Message</h5>
-                    </a>
-                </article>
-        
-                <article class="contact__option">
-                    <a style="line-height: 1.5rem;" style="font-size: large;" href='https://wa.me/+2348163905061'target="_blank" class="contact__option-icon">
-                        <i class="ri-whatsapp-line"></i>
-                        <h4 style="font-size: medium;">WhatsApp</h4>
-                        <h5 style="font-size: small;">+234</h5>
-                        <h5 style="font-size: smaller; color: antiquewhite;">Send a Message</h5>
-                    </a>
-                </article>
-
-                </div>
-        
-                <form id="contact-form" autoComplete='off'>
-                    <input type="hidden" name="contact_number">
-                    <input type="text" name="name" placeholder="Your Name" required /> 
-                    <input type="text" name="email" placeholder="Your email" required />
-                    <textarea name="message" rows="7" placeholder="Your Message" required></textarea> 
-                    <input type="submit" value="Send Message" class="btn btn-primary">
-                </form>
-                
             </div>
-        
-            </section>
-        </main>
+        </div>
+    </div>
 
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-                &#169; Ayodeji. All rigths reserved.
-            </span>
-        </footer>
+    <!-- ----------portfolio --------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/img/joyz-store2.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>An E-commerce website that features a wide variety of products, including clothing, electronics, and home goods.
+                            The website is easy to navigate with an integration of a payment system(stripe). The admin section is powered by a content management system. This 
+                            makes it easy to add new products and manage the existing Products.
+                        </p>
+                        <div class="work-link">
+                            <a href="https://joyz-store.cyclic.app/"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/peejoyz/joyz-store"><i class="fa fa-github-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/img/flix2.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Video Streaming Website with blog Integration</h3>
+                        <p>
+                            A video streaming website where users can upload videos for other users to watch, add comments and like. The website is
+                            easy to use and navigate. Visitors can search for videos by title. The blog section is powered by a content management system. This 
+                            makes it easy to add new posts and manage the existing content. 
+                        </p>
+                        <div class="work-link">
+                            <a href="https://flixx.cyclic.app/"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/peejoyz/flixx"><i class="fa fa-github-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/img/blog2.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Blog API</h3>
+                        <p>
+                            This is a RESTful API blog that allows authorized users to create blog post, update blog post,
+                            delete a blog post and comment on blog post. Also has Listing all blog posts, retrieving a specific blog post features.
+                        </p>
+                        <div class="work-link">
+                            <a href="https://blog-rest-api.cyclic.app/blogs"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/peejoyz/blog-api"><i class="fa fa-github-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class=""></a>
+        </div>
+    </div>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+    <!-- Contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h4 class="sub-title">Contact Me</h4>
+                    <p><i class="fas fa-paper-plane"></i>ayodejipee73@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/peejoyz"><i class="fab fa-github"></i></a>
+                        <a href="https://ng.linkedin.com/in/peejoyz"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/iampeejoyz"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <a href="assets/pdf/AYODEJI-RESUME.pdf" download class="btn btn2">Downlaod CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &COPY; Ayodeji.</p>
+        </div>
+    </div>
+ 
+    <script>
+        let tablinks = document.getElementsByClassName('tab-links');
+        let tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+           for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+           } 
+           for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+           } 
+           event.currentTarget.classList.add("active-link")
+           document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
 
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        function openmenu() {
+            sidemenu.style.right = "0"
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
 
-        <!-- Initialize Swiper -->
-        <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-            },
-            spaceBetween: 20,
-            slidesParView:1,
-        });
-        </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby6XV0XyuaOofFlnFkgFwK3S88GWH7qWs5eryeiqD7nu6Lb1Dp4dJ7B2O40_f3PGveK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
-    </body>
+</body>
 </html>
