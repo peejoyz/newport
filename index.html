@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+
+    <title>AYODEJI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/img/p1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <!-- <a href="/"> -->
+                <div>
+                    <a href="#header">
+                        <img src="assets/img/logo2.png" alt="AYODEJI" srcset="" class="logo">
+                    </a>       
+                </div>
+                
+            <!-- </a>  -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Porfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <i class="fas fa-times" onclick="closemenu()"></i> -->
+                <i class="fa fa-times" id="mobilemenuclose" onclick="closemenu()"></i>
+                <!-- <i class="fa fa-bars" id="mobilemenu" onclick="openmenu()"></i> -->
+            </ul>
+            <!-- <i class="fas fa-bars" onclick="openmenu()"></i> -->
+            <i class="fa fa-bars" id="mobilemenu" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Backend Engineer</p>
+            <h1>Hi, I am <span>Ayodeji</span> </h1>
+        </div>
+       </div> 
+    </div>
+
+    <!-- ---------- About ------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                    <div class="about-col-1">
+                        <img src="assets/img/new-image2.png" alt="" srcset="">
+                    </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        A backend developer capable of continuous learning from other 
+                        developers, with a passion for building scalable and reliable web 
+                        applications.  Ability to architect, develop and deploy high-performance APIs. Highly motivated about learning and development 
+                        with a desire to apply skills on a development team. Thrives on 
+                        problem-solving and collaboration, turning ambitious ideas into 
+                        reality. Seeking a challenging position where I can use my skills to
+                        make a significant impact, also with a commitment to stay updated 
+                        with industry trends for continuous growth.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>Javascript</li>
+                            <li>Bootstrap</li>
+                            <li>NodeJS</li>
+                            <li>ExpressJS</li>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>Git</li>
+                            <li>EJS</li>   
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>B.Tech Computer Science, Lautech</li>
+                            <li><span>2023</span><br>NodeJS certification by I4GxZuri</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------services -------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">More About Me</h1>
+            <div class="services-list">
+                <div>
+                    <i></i>
+                    <h2>Teaching</h2>
+                    <p>
+                        Apart from being a tech enthusiast and a code writer, I also love to teach people what i know
+                        because i believe in sharing.  
+                    </p>
+                    
+                </div>
+
+                <div>
+                    <h2>Music</h2>
+                    <p>
+                        Listening to refreshing and soothing music is something i can never get over, listening to different playlist
+                        created by various streaming platforms and listening to the ones 
+                        i created myself is the best stress reliever that i can get myhands on. 
+                    </p>
+                    
+                </div>
+
+                <div>
+                    <h2>Gaming</h2>
+                    <p>
+                        Aside music, gaming is another activity i get 
+                        involve in, to relieve stress, to relax and test my reflexes. 
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------portfolio --------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/img/joyz-store2.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>An E-commerce website that features a wide variety of products, including clothing, electronics, and home goods.
+                            The website is easy to navigate with an integration of a payment system(stripe). The admin section is powered by a content management system. This 
+                            makes it easy to add new products and manage the existing Products.
+                        </p>
+                        <div class="work-link">
+                            <a href="https://joyz-store.cyclic.app/"> <i class="fa fa-arrow-up"></i> </a>
+                            <a href="https://github.com/peejoyz/joyz-store"><i class="fa fa-github-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/img/flix2.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Video Streaming Website with blog Integration</h3>
+                        <p>
+                            A video streaming website where users can upload videos for other users to watch, add comments and like. The website is
+                            easy to use and navigate. Visitors can search for videos by title. The blog section is powered by a content management system. This 
+                            makes it easy to add new posts and manage the existing content. 
+                        </p>
+                        <div class="work-link">
+                            <a href="https://flixx.cyclic.app/"><i class="fa fa-arrow-up"></i> </a>
+                            <a href="https://github.com/peejoyz/flixx"><i class="fa fa-github-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/img/blog2.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Blog API</h3>
+                        <p>
+                            This is a RESTful API blog that allows authorized users to create blog post, update blog post,
+                            delete a blog post and comment on blog post. Also has Listing all blog posts, retrieving a specific blog post features.
+                        </p>
+                        <div class="work-link">
+                            <a href="https://blog-rest-api.cyclic.app/blogs"><i class="fa fa-arrow-up"></i> </a>
+                            <a href="https://github.com/peejoyz/blog-api"><i class="fa fa-github-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class=""></a>
+        </div>
+    </div>
+
+    <!-- Contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h4 class="sub-title">Contact Me</h4>
+                    <p><i class="fa fa-paper-plane"></i>ayodejipee73@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/peejoyz"><i class="fa fa-github"></i></a>
+                        <a href="https://ng.linkedin.com/in/peejoyz"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://twitter.com/iampeejoyz"><i class="fa fa-twitter-square"></i></a>
+                    </div>
+                    <a href="assets/pdf/AYODEJI-RESUME.pdf" download class="btn btn2">Downlaod CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &COPY; Ayodeji.</p>
+        </div>
+    </div>
+ 
+    <script>
+        let tablinks = document.getElementsByClassName('tab-links');
+        let tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+           for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+           } 
+           for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+           } 
+           event.currentTarget.classList.add("active-link")
+           document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0"
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby6XV0XyuaOofFlnFkgFwK3S88GWH7qWs5eryeiqD7nu6Lb1Dp4dJ7B2O40_f3PGveK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>
